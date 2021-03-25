@@ -27,13 +27,13 @@ int main()
         bool w = 0; // Running on windows boolean false
     #endif
 
-    unsigned long int size = 536870912; // 512MB in bytes
+    unsigned long int size_file = 536870912; // 512MB in bytes
     short int data(0);
     
     while(true)
     {
         ofstream file(path);
-        for (int i = 0; i < (size); i++) 
+        for (int i = 0; i < (size_file); i++) 
         {
             file << data;
         }
