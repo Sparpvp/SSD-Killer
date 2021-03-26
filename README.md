@@ -4,4 +4,4 @@ _Writes huge amount of data in relative "long time" depending on write speed of 
 
 TODO: 
 * ~~Auto-exec script at start of system~~ **- Done**
-* ~~Test file on Windows machine. _(Yea, it's tested only on linux x86_64)_~~ **-Done**
+* ~~Test file on Windows machine. _(Yea, it's tested only on linux x86_64)_~~ **- Done**
