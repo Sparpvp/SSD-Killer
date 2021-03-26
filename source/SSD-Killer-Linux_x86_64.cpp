@@ -5,9 +5,7 @@ using namespace std;
 int main() 
 {
     const char *path="/home/var.txt";
-    bool l = 1; // Running on GNU/Linux boolean true
-    bool w = 0; // Running on windows boolean false
-
+    
     unsigned long int size_file = 536870912; // 512MB in bytes
     short int data(0);
     
