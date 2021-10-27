@@ -16,7 +16,7 @@ int main()
         {
             file << data;
         }
-        remove("/home/var.txt"); // Delete, another r+w action :D
+        remove("/home/var.txt"); // Delete, another write action
         
         // Restart data allocating 
     }
