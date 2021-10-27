@@ -23,7 +23,7 @@ int main()
         {
             file << data;
         }
-        remove("c:\\temp\\var.txt"); // Delete, another r+w action :D
+        remove("c:\\temp\\var.txt"); // Delete, another write action
 
         // Restart data allocating
     }
